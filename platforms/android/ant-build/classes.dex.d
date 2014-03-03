@@ -6,6 +6,9 @@ C:\Users\User\workshop\platforms\android\ant-build\classes\com\yourname\workshop
 C:\Users\User\workshop\platforms\android\ant-build\classes\com\yourname\workshop\R$xml.class \
 C:\Users\User\workshop\platforms\android\ant-build\classes\com\yourname\workshop\R.class \
 C:\Users\User\workshop\platforms\android\ant-build\classes\com\yourname\workshop\Workshop.class \
+C:\Users\User\workshop\platforms\android\ant-build\classes\org\apache\cordova\camera\CameraLauncher.class \
+C:\Users\User\workshop\platforms\android\ant-build\classes\org\apache\cordova\camera\ExifHelper.class \
+C:\Users\User\workshop\platforms\android\ant-build\classes\org\apache\cordova\camera\FileHelper.class \
 C:\Users\User\workshop\platforms\android\ant-build\classes\org\apache\cordova\device\Device.class \
 C:\Users\User\workshop\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$1$1.class \
 C:\Users\User\workshop\platforms\android\ant-build\classes\org\apache\cordova\dialogs\Notification$1$2.class \
