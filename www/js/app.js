@@ -29,6 +29,10 @@
 	$(".add-location-btn").click(function(e) {
 		addLocation(e);
 	});
+	
+	$(".change-pic-btn").click(function(e) {
+		changePicture(e);
+	});
 
 
     /* ---------------------------------- Local Functions ---------------------------------- */
@@ -56,4 +60,28 @@
 				alert('Error getting location');
 			});
 		return false;
-	};
+	}
+
+	function changePicture(event) {
+		event.preventDefault();
+		if (!navigator.camera) {
+			alert("Camera API not supported", "Error");
+			return;
+		}
+		var options =   {   quality: 50,
+							destinationType: Camera.DestinationType.DATA_URL,
+							sourceType: 1,      // 0:Photo Library, 1=Camera, 2=Saved Album
+							encodingType: 0     // 0=JPG 1=PNG
+						};
+	 
+		navigator.camera.getPicture(
+			function(imageData) {
+				$('.employee-image', this.el).attr('src', "data:image/jpeg;base64," + imageData);
+			},
+			function() {
+				alert('Error taking picture', 'Error');
+			},
+			options);
+	 
+		return false;
+	}
